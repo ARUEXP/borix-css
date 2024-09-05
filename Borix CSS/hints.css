@@ -1,0 +1,328 @@
+/* You dont need to link this file, only borix.js need be linked */
+/* Default Styles */
+* {
+  position: relative;
+  box-sizing: border-box;
+  z-index: 0;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Height Classes */
+.h-full {
+  height: 100%;
+}
+.h-half {
+  height: 50%;
+}
+.h-1 {
+  height: 4px;
+}
+.h-2 {
+  height: 8px;
+}
+/* Continue up to .h-100 */
+
+.min-h-1 {
+  min-height: 4px;
+}
+/* Continue up to .min-h-100 */
+
+/* Width Classes */
+.w-full {
+  width: 100%;
+}
+.w-half {
+  width: 50%;
+}
+.w-1 {
+  width: 4px;
+}
+.w-2 {
+  width: 8px;
+}
+/* Continue up to .w-100 */
+
+.min-w-1 {
+  min-width: 4px;
+}
+/* Continue up to .min-w-100 */
+
+.max-w-half {
+  max-width: 50%;
+}
+
+/* Z-Index Classes */
+.z-u-1 {
+  z-index: 1;
+}
+.z-u-2 {
+  z-index: 2;
+}
+/* Continue up to .z-u-10 */
+
+.z-d-1 {
+  z-index: -1;
+}
+.z-d-2 {
+  z-index: -2;
+}
+/* Continue up to .z-d-10 */
+
+/* Positioning */
+.left-x {
+  left: 4px;
+}
+/* Continue up to .left-100 */
+.right-x {
+  right: 4px;
+}
+/* Continue up to .right-100 */
+.top-x {
+  top: 4px;
+}
+/* Continue up to .top-100 */
+.bottom-x {
+  bottom: 4px;
+}
+/* Continue up to .bottom-100 */
+
+/* Position Types */
+.pos-a {
+  position: absolute;
+}
+.pos-f {
+  position: fixed;
+}
+.pos-s {
+  position: sticky;
+}
+
+/* Padding */
+.p-1 {
+  padding: 4px;
+}
+/* Continue up to .p-100 */
+.px-1 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* Continue up to .px-100 */
+.py-1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+/* Continue up to .py-100 */
+
+/* Margin */
+.m-1 {
+  margin: 4px;
+}
+/* Continue up to .m-100 */
+.mx-1 {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+/* Continue up to .mx-100 */
+.my-1 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+/* Continue up to .my-100 */
+
+/* Border */
+.border-1 {
+  border: 1px solid;
+}
+.border-2 {
+  border: 2px solid;
+}
+.border-4 {
+  border: 4px solid;
+}
+.border-none {
+  border: none;
+}
+
+/* Border Radius */
+.rounded-1 {
+  border-radius: 4px;
+}
+/* Continue up to .rounded-10 */
+
+/* Aspect Ratio */
+.aspect-auto {
+  aspect-ratio: auto;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+/* Background Colors */
+.bg-primary {
+  background-color: #000000;
+}
+/* Add more color classes based on your colors.js */
+
+/* Centering */
+.center {
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.center-x {
+  margin: auto;
+}
+.center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jcc {
+  justify-content: center;
+}
+.jca {
+  justify-content: space-around;
+}
+.jcb {
+  justify-content: space-between;
+}
+.jce {
+  justify-content: space-evenly;
+}
+.aic {
+  align-items: center;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+.grid-col {
+  display: grid;
+  grid-auto-flow: column;
+}
+.grid-row {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+/* Scroll */
+.hide-scroll {
+  overflow: hidden;
+}
+.hide-scroll-x {
+  overflow-x: hidden;
+}
+.hide-scroll-y {
+  overflow-y: hidden;
+}
+
+/* Filters */
+.blur-1 {
+  filter: blur(4px);
+}
+/* Continue up to .blur-10 */
+.backblur-1 {
+  backdrop-filter: blur(4px);
+}
+/* Continue up to .backblur-10 */
+
+/* Shadow */
+.shadow-1 {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+/* Continue up to .shadow-10 */
+
+/* Opacity */
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-1 {
+  opacity: 1;
+}
+/* Continue up to .opacity-1 */
+
+/* Size */
+.size-1 {
+  width: 4px;
+  height: 4px;
+}
+/* Continue up to .size-100 */
+
+/* Min and Max Size */
+.min-size-full {
+  min-width: 100%;
+  min-height: 50%;
+}
+.min-size-half {
+  min-width: 100%;
+  min-height: 50%;
+}
+.max-size-full {
+  max-width: 100%;
+  max-height: 50%;
+}
+.max-size-half {
+  max-width: 100%;
+  max-height: 50%;
+}
+
+/* Font Size */
+.font-s-1 {
+  font-size: 4px;
+}
+/* Continue up to .font-s-40 */
+
+/* Font Family */
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+.font-josefin-sans {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.font-jost {
+  font-family: 'Jost', sans-serif;
+}
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+.font-figtree {
+  font-family: 'Figtree', sans-serif;
+}
+.font-red-hat-display {
+  font-family: 'Red Hat Display', sans-serif;
+}
+.font-writer {
+  font-family: 'Writer', sans-serif;
+}
